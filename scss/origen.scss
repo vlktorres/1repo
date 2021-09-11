@@ -1,10 +1,26 @@
 @import "sidebar";
 
 $softgrey: #e8eaed;
+$anchopic: 720px;
+
+@mixin condicional($color) {
+  background-color: ($color);
+
+  @if $color == white {
+  border: 2px solid black;
+  margin: 20px;
+  }
+}
 
 body {
   width: 100%;
   margin: 0;
+}
+
+.parr1 {
+  @include condicional(white);
+  color: black;
+  text-align: center;
 }
 
 .wholeCont {
@@ -39,6 +55,10 @@ body {
   grid-auto-rows: repeat(3, 1fr);
 }
 
+.postPic {
+  width: ($anchopic/2)+10;
+}
+
 .bgimg {
   display: flex;
   background-repeat: no-repeat;
@@ -50,3 +70,4 @@ body {
 input, textarea, select {
   font-size: 20px;
 }
+
