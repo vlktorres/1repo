@@ -1,6 +1,4 @@
 body {
-font-family: "Lato", sans-serif;
-background-color: #e8eaed;
 width: 100%;
 margin: 0;
 }
@@ -106,7 +104,8 @@ flex: 6;
 height: 100vh;
 box-sizing: border-box;
 overflow: auto;
-
+background-color: #e8eaed;
+font-family: "helvetica";
 }
 
 .rightCont div {
