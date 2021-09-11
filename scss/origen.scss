@@ -1,11 +1,13 @@
 @import "sidebar";
 
 $softgrey: #e8eaed;
-$hovercolor: #ff6363;
 
 body {
   width: 100%;
   margin: 0;
+  a {
+    text-decoration: none;
+  }
 }
 
 .wholeCont {

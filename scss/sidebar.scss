@@ -1,5 +1,5 @@
-$hovercolor: #d188bc;
-$softgry: $softgry;
+$hovercolor: #993;
+$softgry: #818181;
 
 .sidenav {
   height: 100vh;
@@ -60,9 +60,9 @@ $softgry: $softgry;
   border: none;
   background: none;
   width: 100%;
-  color: $softgry;
+  color: #818181;
   cursor: pointer;
-  color: $softgry;
+  color: #818181;
   position: relative;
   border: none;
   width: 100%;
@@ -83,9 +83,6 @@ $softgry: $softgry;
     text-decoration: none;
     display: inline-block;
 
-    &:hover {
-      background-color: black;
-    }
   }
 }
 
@@ -95,9 +92,13 @@ $softgry: $softgry;
   }
 
   background-color: white;
+  a {
+    text-decoration: none;
+  }
 }
 
 .sidenav a:hover {
+  text-decoration: none;
   color: #f1f1f1;
   background-color: $hovercolor;
 }

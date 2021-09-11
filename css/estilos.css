@@ -68,21 +68,23 @@
     color: black;
     text-decoration: none;
     display: inline-block; }
-    .subnav a:hover {
-      background-color: black; }
 
 .subnavbtn:hover {
   background-color: white; }
   .subnavbtn:hover .subnav {
     display: block; }
+  .subnavbtn:hover a {
+    text-decoration: none; }
 
 .sidenav a:hover {
-  color: #f1f1f1;
-  background-color: #993; }
+  color: #white;
+  background-color: #d188bc; }
 
 body {
   width: 100%;
   margin: 0; }
+  body a {
+    text-decoration: none; }
 
 .wholeCont {
   display: flex;
