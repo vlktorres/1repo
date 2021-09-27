@@ -8,7 +8,7 @@ $medium: 700px;
 @media screen and (max-width: $medium) {
   .sidenav {
     position: fixed;
-    left: -50%;
+    left: -1%;
     flex-direction: column;
     width: 100%;
     border-radius: 10px;
@@ -35,7 +35,7 @@ $medium: 700px;
   .subnavbtn {
     font-size: 30px;
     padding: 7px;
-    &:target {
+    &:active {
       .subnav {
         display: block;
         }
@@ -45,6 +45,10 @@ $medium: 700px;
   .subnav {
   display: none;
   bottom: 100%;
+  position: relative;
+  left: 0%;
+  z-index: 1;
+  margin-top: 20px;
   }
 
   .sns {
