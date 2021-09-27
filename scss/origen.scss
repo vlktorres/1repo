@@ -1,4 +1,5 @@
 @import "sidebar";
+@import "hamburger";
 
 
 $softgrey: #e8eaed;
@@ -6,9 +7,11 @@ $anchopic: 720px;
 $medium: 700px;
 
 @media screen and (max-width: $medium) {
+  
+
   .sidenav {
     position: fixed;
-    left: -1%;
+    left: -100%;
     flex-direction: column;
     width: 100%;
     border-radius: 10px;
