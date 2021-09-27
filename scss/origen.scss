@@ -1,7 +1,78 @@
 @import "sidebar";
 
+
 $softgrey: #e8eaed;
 $anchopic: 720px;
+$medium: 700px;
+
+@media screen and (max-width: $medium) {
+  .sidenav {
+    position: fixed;
+    left: -50%;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+     0 10px 27px rgba(0, 0, 0, 0.05);
+     a, subnavbtn {
+      font-size: 30px;
+      padding: 7px;
+     }
+    }
+  
+  .sidenav.active {
+    left: 0;
+    }
+
+  .logoPic {
+  &:onclick {
+    transform: rotate(360deg);
+    }
+  }
+
+  .subnavbtn {
+    font-size: 30px;
+    padding: 7px;
+    &:target {
+      .subnav {
+        display: block;
+        }
+    }
+  }
+
+  .subnav {
+  display: none;
+  bottom: 100%;
+  }
+
+  .sns {
+  justify-content: center;
+  font-size: 1.5rem;
+    div {
+    margin: 1rem
+    }
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active {
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .bar:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+     -webkit-transform: translateY(8px) rotate(45deg);
+    }
+    .bar:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+     -webkit-transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
 
 @mixin condicional($color) {
   background-color: ($color);
@@ -15,6 +86,7 @@ $anchopic: 720px;
 body {
   width: 100%;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .parr1 {
