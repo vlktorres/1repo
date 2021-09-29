@@ -12,12 +12,12 @@
 	</head>
 
 	<body>
-		<script src="js/hamburger.js"></script>
 		
 		<section class="wholeCont">
 		
 		<nav class="sidenav">
-			<div class="xbutton"><a href="javascript:void(0)" class="closebtn" onclick="mobileMenu()">✕</a></div>
+			<div class="xbutton"><button class="closebtn"><a href="javascript:void(0)"  onclick="mobileMenu()">✕</a></button>
+			</div>
 			
 			<div class="iconLinks">
 				<div class="logoPic"> <img src="img/placeholder.png"> </div>
@@ -42,7 +42,7 @@
 		
 		<section class="rightCont">
 		<section class="header">
-			<button class="hamburger" onclick="openNav()">
+			<button class="hamburger" href="javascript:void(0)" onclick="closeMenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -61,4 +61,6 @@
 		</section>
 
 	</body>
+	<script src="js/hamburger.js"></script>
+		
 </html>

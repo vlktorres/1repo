@@ -9,42 +9,43 @@ $medium: 700px;
 @media screen and (max-width: $medium) {
   
   .sidenav {
+    background-color: white;
     position: absolute;
-    left: -1%;
+    left: -100%;
     flex-direction: column;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 1;
     box-shadow:
      0 10px 27px rgba(0, 0, 0, 0.05);
-     a:not.xbutton, subnavbtn {
-      font-size: 30px;
-      padding: 10px;
-     }
     }
   
   .xbutton {
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   a {
     font-size: 30px;
     padding: 10px;
+    }
+  a:hover {
+    background-color: transparent;
+    color: black;
     }
   }
 
   .closebtn {
   display: inline-block;
   vertical-align: middle;
-  width: 10%;
+  width: 100%;
   border-radius: 0px 10px 0px;
   z-index: 2;
   line-height: 1.6;
   cursor: pointer;
-  
   }
   
   .sidenav.active {
@@ -57,8 +58,16 @@ $medium: 700px;
     }
   }
 
+  .iconLinks {
+    a {
+    font-size: 20px;
+    padding: 10px;
+    }
+  }
+
   .subnavbtn {
-    padding: 10px 0px 0px 0px;  
+    padding: 10px 0px 0px 0px;
+    font-size: 20px;  
   }
 
   .subnav {
@@ -73,13 +82,14 @@ $medium: 700px;
 
   .sns {
   justify-content: center;
+  color: black;
   font-size: 1.5rem;
     div {
     margin: 1rem
     }
   }
   .bgimg {
-  background-color: #cccccc;
+  background-color: $softgrey;
   height: 95%;
   background-position: center;
   background-repeat: no-repeat;
