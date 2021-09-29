@@ -10,7 +10,7 @@ $medium: 700px;
   
   .sidenav {
     position: absolute;
-    left: -10%;
+    left: -1%;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -20,22 +20,31 @@ $medium: 700px;
     z-index: 2;
     box-shadow:
      0 10px 27px rgba(0, 0, 0, 0.05);
-     a:not(.closebtn), subnavbtn {
-      font-size: 20px;
+     a:not.xbutton, subnavbtn {
+      font-size: 30px;
       padding: 10px;
      }
     }
   
   .xbutton {
-  display: block;
-  padding: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  a {
+    font-size: 30px;
+    padding: 10px;
+    }
   }
 
   .closebtn {
-  position: absolute;
-  border: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
   border-radius: 0px 10px 0px;
   z-index: 2;
+  line-height: 1.6;
+  cursor: pointer;
+  
   }
   
   .sidenav.active {
@@ -86,6 +95,7 @@ $medium: 700px;
 
   .hamburger {
     display: block;
+    vertical-align: middle;
     cursor: pointer;
   }
   .hamburger.active {
@@ -168,7 +178,8 @@ body {
   background-position: center;
 }
 
-input, textarea, select {
-  font-size: 20px;
+button {
+  border: 0px;
+  background-color: transparent;
 }
 

@@ -1,14 +1,15 @@
 .header {
   display: none;
   border-bottom: 1px solid #E2E8F0;
-  padding: 3%;
+  height: 7%;
   position: sticky;
   background-color: #ffffff;
 }
 
 .xbutton {
   display: none;
-  padding-right: 30px;
+  width: 100%;
+  height: 7%;
 }
 
 .closebtn {
@@ -18,11 +19,12 @@
 
 .hamburger {
     display: none;
+    margin: 1rem;
 }
 
 .bar {
     display: block;
-    width: 25px;
+    width: 29px;
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;

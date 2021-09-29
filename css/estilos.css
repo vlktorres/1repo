@@ -86,24 +86,26 @@
 .header {
   display: none;
   border-bottom: 1px solid #E2E8F0;
-  padding: 3%;
+  height: 7%;
   position: sticky;
   background-color: #ffffff; }
 
 .xbutton {
   display: none;
-  padding-right: 30px; }
+  width: 100%;
+  height: 7%; }
 
 .closebtn {
   position: absolute;
   text-align: right; }
 
 .hamburger {
-  display: none; }
+  display: none;
+  margin: 1rem; }
 
 .bar {
   display: block;
-  width: 25px;
+  width: 29px;
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -113,7 +115,7 @@
 @media screen and (max-width: 700px) {
   .sidenav {
     position: absolute;
-    left: -10%;
+    left: -1%;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -122,17 +124,24 @@
     transition: 0.3s;
     z-index: 2;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); }
-    .sidenav a:not(.closebtn), .sidenav subnavbtn {
-      font-size: 20px;
+    .sidenav a:not.xbutton, .sidenav subnavbtn {
+      font-size: 30px;
       padding: 10px; }
   .xbutton {
-    display: block;
-    padding: 20px; }
-  .closebtn {
     position: absolute;
-    border: 20px;
+    display: flex;
+    align-items: center; }
+    .xbutton a {
+      font-size: 30px;
+      padding: 10px; }
+  .closebtn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
     border-radius: 0px 10px 0px;
-    z-index: 2; }
+    z-index: 2;
+    line-height: 1.6;
+    cursor: pointer; }
   .sidenav.active {
     left: 0; }
   .logoPic:onclick {
@@ -165,6 +174,7 @@
     align-items: center; }
   .hamburger {
     display: block;
+    vertical-align: middle;
     cursor: pointer; }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0; }
@@ -223,5 +233,6 @@ body {
   padding-top: 40%;
   background-position: center; }
 
-input, textarea, select {
-  font-size: 20px; }
+button {
+  border: 0px;
+  background-color: transparent; }
