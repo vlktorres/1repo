@@ -12,20 +12,22 @@
 	</head>
 
 	<body>
-		<script src="js/dropdown.js"></script>
+		<script src="js/hamburger.js"></script>
 		
 		<section class="wholeCont">
 		
 		<nav class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 			<div class="iconLinks">
 				<div class="logoPic"> <img src="img/placeholder.png"> </div>
 		  		<div><a href="index.html">Inicio</a></div>
-		   		<button class="subnavbtn"> Galería
-		   				 	<div class="subnav">
-		   		 			<a href="illust.html">ilustración</a>
-		   		 			<a href="design.html">diseño</a>
-		   		 			</div>
-		   		 </button>
+		   			<button type="button" class="subnavbtn"> Galería
+		   				<div class="subnav">
+		   		 		<a href="illust.html">ilustración</a>
+		   		 		<a href="design.html">diseño</a>
+		   		 		</div>
+		   			</button>
+		   		 	
 		   		 	<div><a href="about.html">Sobre mí</a></div>
 		   		 	<div><a href="contact.html">Contacto</a></div>
 	 		</div>
@@ -38,7 +40,13 @@
 		</nav>
 		
 		<section class="rightCont">
-
+		<section class="header">
+			<div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+		</section>	
 				
 		<div class="bgimg" style="background-image: url('img/index.png')">
  		</div>

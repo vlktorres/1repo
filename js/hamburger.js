@@ -1,14 +1,9 @@
-const hamburger = document.querySelector(".hamburger");
-const sidenav = document.querySelector(".sidenav");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    sidenav.classList.toggle("active");
+function openNav() {
+  document.getElementsByClassName("sidenav").style.width = "100%";
+  document.getElementsByClassName("rightCont").style.marginLeft = "100%";
 }
 
-function closeMenu() {
-    hamburger.classList.remove("active");
-    sidenav.classList.remove("active");
+function closeNav() {
+  document.getElementsByClassName("sidenav").style.width = "0";
+  document.getElementsByClassName("rightCont").style.marginLeft= "0";
 }

@@ -1,3 +1,17 @@
+.header {
+  display: none;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 3%;
+  position: sticky;
+  background-color: #ffffff;
+}
+
+.closebtn {
+  display: none;
+  
+  text-align: right;
+}
+
 .hamburger {
     display: none;
 }
@@ -10,8 +24,4 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
-}
-
-.topbar {
-    
 }
