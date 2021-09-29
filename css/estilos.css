@@ -90,8 +90,12 @@
   position: sticky;
   background-color: #ffffff; }
 
-.closebtn {
+.xbutton {
   display: none;
+  padding-right: 30px; }
+
+.closebtn {
+  position: absolute;
   text-align: right; }
 
 .hamburger {
@@ -108,8 +112,8 @@
 
 @media screen and (max-width: 700px) {
   .sidenav {
-    position: fixed;
-    left: -100%;
+    position: absolute;
+    left: -10%;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -118,13 +122,19 @@
     transition: 0.3s;
     z-index: 2;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); }
-    .sidenav a, .sidenav subnavbtn {
+    .sidenav a:not(.closebtn), .sidenav subnavbtn {
       font-size: 20px;
       padding: 10px; }
+  .xbutton {
+    display: block;
+    padding: 20px; }
+  .closebtn {
+    position: absolute;
+    border: 20px;
+    border-radius: 0px 10px 0px;
+    z-index: 2; }
   .sidenav.active {
     left: 0; }
-  .closebtn {
-    display: block; }
   .logoPic:onclick {
     transform: rotate(360deg); }
   .subnavbtn {

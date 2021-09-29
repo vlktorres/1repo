@@ -9,8 +9,8 @@ $medium: 700px;
 @media screen and (max-width: $medium) {
   
   .sidenav {
-    position: fixed;
-    left: -100%;
+    position: absolute;
+    left: -10%;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -20,18 +20,26 @@ $medium: 700px;
     z-index: 2;
     box-shadow:
      0 10px 27px rgba(0, 0, 0, 0.05);
-     a, subnavbtn {
+     a:not(.closebtn), subnavbtn {
       font-size: 20px;
       padding: 10px;
      }
     }
   
-  .sidenav.active {
-    left: 0;
-    }
+  .xbutton {
+  display: block;
+  padding: 20px;
+  }
 
   .closebtn {
-  display: block;
+  position: absolute;
+  border: 20px;
+  border-radius: 0px 10px 0px;
+  z-index: 2;
+  }
+  
+  .sidenav.active {
+    left: 0;
   }
 
   .logoPic {
@@ -122,7 +130,6 @@ body {
   margin: auto;
   line-height: 1;
 }
-
 
 .rightCont {
   flex: 6;

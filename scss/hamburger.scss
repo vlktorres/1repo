@@ -6,9 +6,13 @@
   background-color: #ffffff;
 }
 
-.closebtn {
+.xbutton {
   display: none;
-  
+  padding-right: 30px;
+}
+
+.closebtn {
+  position: absolute;
   text-align: right;
 }
 
