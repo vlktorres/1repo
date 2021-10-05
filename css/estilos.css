@@ -54,8 +54,7 @@
   border: none; }
 
 .active {
-  background-color: green;
-  color: white; }
+  background-color: white; }
 
 .subnav {
   display: none;
@@ -120,7 +119,6 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     z-index: 1; }
