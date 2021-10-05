@@ -14,36 +14,12 @@ $medium: 700px;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding-top: 100px;
     text-align: center;
     transition: 0.3s;
     z-index: 1;
     
     }
-  
-  .xbutton {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  a {
-    font-size: 30px;
-    padding: 10px;
-    }
-  a:hover {
-    background-color: transparent;
-    color: black;
-    }
-  }
-
-  .closebtn {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  border-radius: 0px 10px 0px;
-  z-index: 2;
-  line-height: 1.6;
-  cursor: pointer;
-  }
   
   .sidenav.active {
     left: 0;
@@ -87,7 +63,7 @@ $medium: 700px;
   }
   .bgimg {
   background-color: $softgrey;
-  height: 95%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,12 +74,31 @@ $medium: 700px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
   }
 
   .hamburger {
     display: block;
     vertical-align: middle;
     cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+  .rightCont {
+  padding-top: 60px;
   }
 
 }
@@ -124,13 +119,13 @@ body {
 
 .wholeCont {
   display: flex;
+  height: 100vh;
   margin: auto;
   line-height: 1;
 }
 
 .rightCont {
   flex: 6;
-  height: 100vh;
   box-sizing: border-box;
   font-family: "Helvetica", sans-serif;
   background-color: $softgrey;
