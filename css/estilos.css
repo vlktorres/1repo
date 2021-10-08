@@ -119,7 +119,9 @@
   .sidenav.active {
     left: 0; }
   .logoPic {
-    width: 50%; }
+    display: none; }
+    .logoPic img {
+      width: 100px; }
     .logoPic:onclick {
       transform: rotate(360deg); }
   .iconLinks a {
