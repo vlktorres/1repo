@@ -168,7 +168,10 @@
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg); }
   .rightCont {
-    padding-top: 60px; } }
+    padding-top: 60px; }
+  .pics img {
+    width: 100%;
+    object-fit: none; } }
 
 body {
   width: 100%;
@@ -197,24 +200,36 @@ body {
 
 .mainn {
   grid-area: texxt;
-  margin: 30px;
-  border-style: dotted;
-  padding: 20px;
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: repeat(3, 1fr); }
+  .mainn p, .mainn h1, .mainn h2, .mainn h3, .mainn h4, .mainn h5, .mainn h6 {
+    padding: 10px 20px; }
 
 .postPic {
   width: 370px; }
+
+.pics {
+  padding: 0; }
+  .pics img {
+    height: 450px;
+    object-fit: cover; }
 
 .bgimg {
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 40%;
-  background-position: center; }
+  background-position: center;
+  margin-bottom: 10px; }
 
 button {
   border: 0px;
   background-color: transparent; }
+
+form {
+  padding: 20px;
+  max-width: 800px; }
+  form div, form input {
+    padding: 5px; }
